@@ -1,0 +1,86 @@
+{
+  "requests": [
+    {
+      "id": "r00",
+      "arrival": 0,
+      "deadline": -1,
+      "type": "image"
+    },
+    {
+      "id": "r01",
+      "arrival": 0,
+      "deadline": 10,
+      "type": "image"
+    },
+    {
+      "id": "r02",
+      "arrival": 1,
+      "deadline": 3,
+      "type": "text"
+    },
+    {
+      "id": "r03",
+      "arrival": 3,
+      "deadline": 8,
+      "type": "image"
+    },
+    {
+      "id": "r04",
+      "arrival": 5,
+      "deadline": 5,
+      "type": "text"
+    },
+    {
+      "id": "r05",
+      "arrival": 6,
+      "deadline": 12,
+      "type": "text"
+    },
+    {
+      "id": "r06",
+      "arrival": 6,
+      "deadline": 10,
+      "type": "image"
+    },
+    {
+      "id": "r07",
+      "arrival": 8,
+      "deadline": 20,
+      "type": "text"
+    }
+  ],
+  "service": {
+    "image": {
+      "1": 4,
+      "2": 5,
+      "3": 6
+    },
+    "text": {
+      "1": 2,
+      "2": 3,
+      "3": 4
+    }
+  },
+  "configurations": [
+    {
+      "id": "single",
+      "workers": 1,
+      "max_batch": 1,
+      "wait_window": 0
+    },
+    {
+      "id": "batch",
+      "workers": 2,
+      "max_batch": 3,
+      "wait_window": 3
+    }
+  ],
+  "observation_window": [
+    0,
+    15
+  ],
+  "cost_per_time": {
+    "busy": "3/2",
+    "idle": "1/4"
+  }
+}

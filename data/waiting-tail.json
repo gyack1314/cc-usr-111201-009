@@ -1,0 +1,44 @@
+{
+  "requests": [
+    {
+      "id": "tail",
+      "arrival": 0,
+      "deadline": 20,
+      "type": "image"
+    }
+  ],
+  "service": {
+    "image": {
+      "1": 4,
+      "2": 5,
+      "3": 6
+    },
+    "text": {
+      "1": 2,
+      "2": 3,
+      "3": 4
+    }
+  },
+  "configurations": [
+    {
+      "id": "single",
+      "workers": 1,
+      "max_batch": 1,
+      "wait_window": 0
+    },
+    {
+      "id": "batch",
+      "workers": 2,
+      "max_batch": 3,
+      "wait_window": 3
+    }
+  ],
+  "observation_window": [
+    0,
+    15
+  ],
+  "cost_per_time": {
+    "busy": "3/2",
+    "idle": "1/4"
+  }
+}

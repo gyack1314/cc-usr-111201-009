@@ -1,0 +1,18 @@
+{
+  "requests": [
+    {"id": "a0", "arrival": 0, "deadline": 20, "type": "image"},
+    {"id": "a1", "arrival": 0, "deadline": 20, "type": "image"},
+    {"id": "b0", "arrival": 1, "deadline": 20, "type": "text"},
+    {"id": "b1", "arrival": 1, "deadline": 20, "type": "text"},
+    {"id": "b2", "arrival": 1, "deadline": 20, "type": "text"}
+  ],
+  "service": {
+    "image": {"1": 4, "2": 5, "3": 6},
+    "text": {"1": 2, "2": 3, "3": 4}
+  },
+  "configurations": [
+    {"id": "blocked-head", "workers": 2, "max_batch": 3, "wait_window": 2}
+  ],
+  "observation_window": [0, 9],
+  "cost_per_time": {"busy": "3/2", "idle": "1/4"}
+}

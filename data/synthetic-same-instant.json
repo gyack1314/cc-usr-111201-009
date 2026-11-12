@@ -1,0 +1,17 @@
+{
+  "requests": [
+    {"id": "r00", "arrival": 0, "deadline": 10, "type": "image"},
+    {"id": "r01", "arrival": 0, "deadline": 0, "type": "text"},
+    {"id": "r02", "arrival": 4, "deadline": 6, "type": "text"},
+    {"id": "r03", "arrival": 6, "deadline": 6, "type": "image"}
+  ],
+  "service": {
+    "image": {"1": 4, "2": 5, "3": 6},
+    "text": {"1": 2, "2": 3, "3": 4}
+  },
+  "configurations": [
+    {"id": "one-worker", "workers": 1, "max_batch": 1, "wait_window": 0}
+  ],
+  "observation_window": [0, 8],
+  "cost_per_time": {"busy": "2", "idle": "1/2"}
+}
